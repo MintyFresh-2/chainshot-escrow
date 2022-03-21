@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>Make Bet</h3>
+    <label for="coins">Choose a coin to bet on the price of:</label>
+    <select name="coins" id="coins-bet">
+      <option value="luna">Luna</option>
+    </select>
+    <br />
+    <label for="quantity">How much to bet</label>
+    <input type="number" name="quantity" />
+    <br />
+    <label for="price">Betting on what price to reach</label>
+    <input type="number" name="price" />
+    <br />
+    <button>Submit Bet</button>
+    <p>Password for this bet:</p>
+    <h3>Fulfil Bet</h3>
+    <label for="password-input"
+      >What is the password for the bet you want to fulfil:</label
+    >
+    <input type="text" name="password-input" />
+    <button>Submit</button>
+
+    <script
+      src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+      type="application/javascript"
+    ></script>
+    <script src="escrow.js"></script>
+  </body>
+</html>
